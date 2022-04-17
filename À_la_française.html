@@ -12,21 +12,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
     <header>
         <div class="nav">
-            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-            <img class="nav_logo" src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
+            <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+            <img class="nav_logo" src="/images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
         </div>
-        <img class="menu_image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+        <img class="menu_image" src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
     </header>
     <main class="menu">
         <div class="menu_title">
             <h1>À la française</h1>
-            <i class="far fa-heart hrt"><span class="fas fa-heart hrts"></span></i>
+            <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 22">
+                <linearGradient id="grad" x1="25%" y1="0%" x2="0%" y2="100%">
+                    <stop class="purple" offset="0%"/>
+                    <stop class="pink" offset="100%"/>
+                </linearGradient>
+                <path d="M12 20.593C9.62863 18.26 7.3034 16.0655 5.40613 14C2.79899 11.1617 1 8.56697 1 6.191C1 2.4 4.068 1 6.281 1C7.593 1 10.432 1.501 12 5.457C13.59 1.489 16.464 1.01 17.726 1.01C20.266 1.01 23 2.631 23 6.191C23 8.57718 21.2337 11.1308 18.5902 14C16.7258 16.0234 14.4252 18.2038 12 20.593ZM17.726 0.00999999C15.523 0.00999999 13.28 1.052 12 3.248C10.715 1.042 8.478 0 6.281 0C3.098 0 0 2.187 0 6.191C0 10.852 5.571 15.62 12 22C18.43 15.62 24 10.852 24 6.191C24 2.18 20.905 0.00999999 17.726 0.00999999Z"></path>
+            </svg>
         </div>
         <div class="menu_part">
             <h2>ENTRÉES</h2>
@@ -107,7 +113,7 @@
 
     </main>
     <footer>
-        <img src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
+        <img src="/images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
         <ul>
             <li><b><i class="fas fa-utensils"></i> Proposer un restaurant</b></li>
             <li><b><i class="fas fa-handshake"></i> Devenir partenaire</b></li>
