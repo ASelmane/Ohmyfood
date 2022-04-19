@@ -81,7 +81,7 @@ a{
     transition: 0.3s ease;
     &:hover{
         transition: 0.3s ease;
-        opacity: 0.8;
+        opacity: 0.75;
         box-shadow: 0 0.3em 0.3em 0em #aaaaaa;
     }
 }
@@ -291,30 +291,71 @@ footer{
         }
     }
     &_div{
+        cursor: pointer;
         display: flex;
-        padding: 0.4em;
-        justify-content: space-between;
-        gap: 1em;
         border-radius: 0.5em;
         background-color: white;
         box-shadow: 0 0.2em 0.2em 0 #dddddd;
         margin-bottom: 0.7em;
-        transition: 0.3s ease;
+        transition: 0.3s linear;
+        overflow: hidden;
         &:hover{
             box-shadow: 0 0.2em 0.2em 0 #cccccc;
-            transition: 0.3s ease;
+            transition: 0.5s linear;
+            .menu_div_text{
+                transition: 0.3s linear 0.1s;
+                min-width: 100px;
+            }
+            .menu_div_price{
+                min-width: 11%;
+                margin-left: 0;
+                transition: 0.3s linear ;
+            }
+            i{
+                transform: rotate(360deg);
+                transition: 0.4s linear;
+            }
         }
         &_text{
-            display: flex;
             flex-flow: column;
             gap: 0.2em;
+            margin: 7px;
+            margin-right: 0;
+            white-space: nowrap;
+            min-width: 80%;
+            width: 100%;
+            transition: 0.5s linear;
+            h3{
+                text-overflow: ellipsis; 
+                overflow: hidden;
+            }
         }
         p{
             font-size: 0.5em;
+            overflow: hidden;
+            text-overflow: ellipsis; 
         }
-        b{
+        &_price{
             font-size: 0.5em;
-            align-self: flex-end;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin: 7px 5px;
+            min-width: 15%;
+            transition: 0.3s linear 0.3s;
+        }
+        &_select{
+            background-color: $tertiaire;
+            display: flex;
+            align-items: center;
+            color: white;
+            justify-content: center;
+            border-top-right-radius: 0.5em;
+            border-bottom-right-radius: 0.5em;
+            min-width: 3em;
+            font-size: 0.8em;
+            transition: 0.5s ease;
         }
     }
     .btn{

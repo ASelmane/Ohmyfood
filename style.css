@@ -100,7 +100,7 @@ a {
 .btn:hover {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  opacity: 0.8;
+  opacity: 0.75;
   -webkit-box-shadow: 0 0.3em 0.3em 0em #aaaaaa;
           box-shadow: 0 0.3em 0.3em 0em #aaaaaa;
 }
@@ -417,49 +417,109 @@ footer li {
 }
 
 .menu_div {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.4em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 1em;
   border-radius: 0.5em;
   background-color: white;
   -webkit-box-shadow: 0 0.2em 0.2em 0 #dddddd;
           box-shadow: 0 0.2em 0.2em 0 #dddddd;
   margin-bottom: 0.7em;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  overflow: hidden;
 }
 
 .menu_div:hover {
   -webkit-box-shadow: 0 0.2em 0.2em 0 #cccccc;
           box-shadow: 0 0.2em 0.2em 0 #cccccc;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.menu_div:hover .menu_div_text {
+  -webkit-transition: 0.3s linear 0.1s;
+  transition: 0.3s linear 0.1s;
+  min-width: 100px;
+}
+
+.menu_div:hover .menu_div_price {
+  min-width: 11%;
+  margin-left: 0;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.menu_div:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 .menu_div_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
   gap: 0.2em;
+  margin: 7px;
+  margin-right: 0;
+  white-space: nowrap;
+  min-width: 80%;
+  width: 100%;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.menu_div_text h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu_div p {
   font-size: 0.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.menu_div b {
+.menu_div_price {
   font-size: 0.5em;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 7px 5px;
+  min-width: 15%;
+  -webkit-transition: 0.3s linear 0.3s;
+  transition: 0.3s linear 0.3s;
+}
+
+.menu_div_select {
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  min-width: 3em;
+  font-size: 0.8em;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .menu .btn {
