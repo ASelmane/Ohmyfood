@@ -314,14 +314,14 @@ footer{
         }
     }
 }
-
-.menu_image{
+.menu{
+    &_image{
     width: 100%;
     box-sizing: border-box;
     object-fit: cover;
-}
+    }
 
-.menu{
+    &_info{
     padding: 1.8em 1em;
     padding-bottom: 3em;
     display: flex;
@@ -331,6 +331,7 @@ footer{
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
     position: relative;
+    }
     h1{
         margin: 0;
         font-family: "Shrikhand",sans-serif;
@@ -455,5 +456,110 @@ footer{
     to{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media only screen and (min-width : 480px) {
+    h2{
+        font-size: 1.8em;
+    }
+    .btn{
+        font-size: 0.9em;
+    }
+
+    body{
+        font-size: 1.8em;
+    }
+
+}
+
+@media only screen and (min-width : 768px) {
+    body{
+        font-size: 2.4em;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    body{
+        font-size: 1.4em;
+    }
+
+    section{
+        padding: 1em 3em;
+    }
+
+    .fonctionnement{
+        flex-flow: row;
+        gap: 1em;
+        &_div{
+            margin-top: 1em;
+            flex-flow: column;
+            height: auto;
+            flex-grow: 1;
+            text-align: center;
+            gap: 0.6em;
+            padding: 0 0.5em 1em;
+            .circle{
+                margin: -0.7em 0 0;
+                font-size: 1.2em;
+            }
+            i{
+                font-size: 1.2em;
+            }
+            h3{
+                width: auto;
+                font-size: 1em;
+            }
+        }
+    }
+
+    .restaurants{
+        flex-flow: wrap;
+        max-width: 63em;
+        &_card{
+            flex: 1 1 12em;
+            &_image{
+                height: 7em;
+            }
+            &-invisible{
+                flex: 1 1 12em;
+            }
+        }
+    }
+
+    footer{
+        padding-left: 3em;
+        height: 7em;
+        ul{
+            display: flex;
+            flex-flow: column;
+            flex-wrap: wrap;
+            height: 4em;
+        }
+    }
+
+    .menu{
+        display: flex;
+        &_info{
+            margin: 0;
+            width: 100%;
+            margin-left: -50%;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 2em;
+            padding: 2.5em 1.3em;
+            box-shadow: -1em 0em 1em -1em #333333;
+        }
+    }
+}
+
+@media only screen and (min-width : 1500px) {
+    body{
+        font-size: 1.9em;
+    }
+}
+
+@media only screen and (min-width : 1824px) {
+    body{
+        font-size: 2.5em;
     }
 }
