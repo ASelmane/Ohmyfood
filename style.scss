@@ -60,16 +60,17 @@ body{
 }
 
 h2{
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
 }
 
 h3{
-    font-size: 0.6em;
+    font-size: 0.9em;
     margin: 0;
 }
 
 p{
-    font-size: 0.6em;
+    font-size: 0.9em;
     font-weight:300;
     margin: 0;
 }
@@ -80,38 +81,44 @@ p{
     position: relative;
     i{
         position: absolute;
-        left: 1em;
-        top: 1.5em;
+        left: 1.2em;
+        top: 1.2em;
         color: black;
-        font-size: 0.8em;
+        font-size: 1em;
     }
     &_logo{
-        width: 7em;
+        width: 8em;
         padding: 1em 0 0.5em 0;
     }
 }
 
 .localisation{
     display: flex;
-    background-color: #dddddd;
+    background-color: #eaeaea;
     box-shadow: 0 0.5em 0.5em -0.5em gray inset;
     padding: 1em 2em 1em 0;
     justify-content: center;
     gap: 1em;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 main{
     margin: 0;
 }
 
-#explorer{
+section{
     display: flex;
     flex-direction: column;
+    padding: 1em;
+}
+
+.grey{
+    background-color: #f6f6f6;
+}
+
+#explorer{
     justify-content: center;
     text-align: center;
-    background-color: #eaeaea;
-    padding: 0.5em 1.5em 2em 1.5em;
 }
 
 a{
@@ -122,10 +129,9 @@ a{
 .btn{
     color: white;
     font-size: 0.7em;
-    font-weight: bold;
+    font-weight: 500;
     padding: 1em;
-    margin: auto;
-    margin-top: 1.5em;
+    margin: 2em auto 1em;
     border-radius: 2em;
     background: linear-gradient(170deg,$secondary,$primary);
     box-shadow: 0 0.3em 0.3em 0em #cccccc;
@@ -137,84 +143,85 @@ a{
     }
 }
 
-#fonctionnement{
-    padding: 1em;
+.fonctionnement{
     display: flex;
     flex-direction: column;
-}
-
-.fonctionnement_div{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    border-radius: 0.5em;
-    background-color: #f6f6f6;
-    box-shadow: 0 0.2em 0.2em 0 #dddddd;
-    height: 2.2em;
-    margin-bottom: 0.7em;
-    margin-left: 0.5em;
-    transition: 0.3s ease;
-    .circle{
-        margin-left: -0.7em;
-        width: 1.5em;
-        height: 1.5em;
-        border-radius: 1em;
-        background-color: $primary;
+    margin: 1em 0;
+    &_div{
         display: flex;
         align-items: center;
-        justify-content: center;
-        color: white;
-        font-weight: bold;
-        font-size: 0.5em;
-    }
-    i{
-        width: 1em;
-        color: $primary;
-        font-size: 0.7em;
-    }
-    &:hover{
-        box-shadow: 0 0.2em 0.2em 0 #cccccc;
+        justify-content: space-between;
+        border-radius: 1em;
+        background-color: #f6f6f6;
+        box-shadow: 0 0.2em 0.2em 0 #dddddd;
+        height: 3.7em;
+        margin-bottom: 0.7em;
+        margin-left: 0.5em;
         transition: 0.3s ease;
-        background-color: #f5edff;
+        .circle{
+            margin-left: -0.7em;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 1em;
+            background-color: $primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+        i{
+            width: 1em;
+            color: gray;
+            font-size: 1em;
+        }
+        h3{
+            width: 75%;
+        }
+        &:hover{
+            box-shadow: 0 0.2em 0.2em 0 #cccccc;
+            transition: 0.3s ease;
+            background-color: #f5edff;
+            i{
+                color: $primary;
+            }
+        }
     }
-}
-
-#restaurants{
-    background-color: #f6f6f6;
-    padding: 1em;
-    padding-bottom: 2.5em;
-    display: flex;
-    flex-direction: column;
 }
 
 .restaurants{
     display: flex;
     flex-direction: column;
-    gap: 0.7em;
+    gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
     &_card{
-        border-radius: 0.5em;
+        border-radius: 0.8em;
         display: flex;
         flex-direction: column;
         width: 100%;
         position: relative;
         background-color: white;
-        box-shadow: 0 0.2em 0.2em 0 #dddddd;
+        box-shadow: 0 0.2em 0.4em 0 #dddddd;
         transition: 0.3s ease;
         &_new{
             position: absolute;
-            background-color: #63cf9d;
-            color:darkgreen;
-            font-size: 0.5em;
-            padding: 0.3em 0.7em;
+            background-color: $tertiaire;
+            color: #149373;
+            font-size: 0.7em;
+            font-weight: 500;
+            padding: 0.4em 0.8em;
             align-items: center;
             top: 1em;
             right: 1em;
+            border-radius: 0.1em;
         }
         &_image{
-            border-top-left-radius: 0.5em;
-            border-top-right-radius: 0.5em;
+            border-top-left-radius: 0.8em;
+            border-top-right-radius: 0.8em;
             width: 100%;
-            height: 7em;
+            height: 10em;
             box-sizing: border-box; 
             object-fit: cover;
             object-position: bottom;
@@ -225,7 +232,7 @@ a{
         &_info{
             display: flex;
             justify-content: space-between;
-            padding: 0.5em 1em 0.5em 0.5em;
+            padding: 0.8em;
             align-items: center;
             &_text{
                 color: black;
@@ -237,8 +244,8 @@ a{
         }
         svg{
             position: absolute;
-            bottom: 0.8em;
-            right: 1em;
+            bottom: 1.5em;
+            right: 1.5em;
         }
     }
 }
@@ -246,8 +253,8 @@ a{
 .heart{
     margin: auto 0;
     cursor: pointer;
-    height: 1em;
-    width: 1em;
+    height: 1.2em;
+    width: 1.2em;
     linearGradient{
         .purple{
             stop-color: $primary;
@@ -286,21 +293,25 @@ a{
 footer{
     background-color: rgb(50,50,50);
     color: white;
-    padding: 1em;
-    height: 6em;
+    padding: 1.3em 1em;
+    height: 9em;
     img{
         filter:invert(100%);
-        width: 4em;
+        width: 6em;
     }
     ul{
-        margin: 0.5em 0;
+        margin: 0.7em 0;
         padding:0;
     }
     li{
         list-style: none;
-        font-size: 0.6em;
+        font-size: 0.9em;
         line-height: 1.7em;
         color: white;
+        i{
+            width: 1.2em;
+            margin-right: 0.2em;
+        }
     }
 }
 
@@ -311,7 +322,7 @@ footer{
 }
 
 .menu{
-    padding: 1em;
+    padding: 1.8em 1em;
     padding-bottom: 3em;
     display: flex;
     flex-direction: column;
@@ -323,7 +334,8 @@ footer{
     h1{
         margin: 0;
         font-family: "Shrikhand",sans-serif;
-        font-size: 1em;
+        font-size: 1.5em;
+        font-weight: normal;
     }
     &_title{
         display: flex;
@@ -336,48 +348,48 @@ footer{
         margin-bottom: 1em;
         animation: fadeIn 2s forwards;
         h2{
-            font-size: 0.6em;
+            font-size: 0.9em;
             font-weight: normal;
             margin: 0;
         }
         hr{
             border: none;
-            border-top: 2px solid $tertiaire;
+            border-top: 0.2em solid $tertiaire;
             margin: 0.2em 0 0.5em 0;
-            width: 1.3em;
+            width: 2.3em;
         }
     }
     &_div{
-        opacity: 0;
-        animation: fadeIn 1s forwards;
-            &:nth-child(3){
-                animation-delay: 0.25s;
-            }
-            &:nth-child(4){
-                animation-delay: 0.5s;
-            }
-            &:nth-child(5){
-                animation-delay: 0.75s;
-            }
         cursor: pointer;
         display: flex;
-        border-radius: 0.5em;
+        border-radius: 0.8em;
         background-color: white;
+        height: 3.5em;
         box-shadow: 0 0.2em 0.2em 0 #dddddd;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.8em;
         transition: 0.3s linear;
         overflow: hidden;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+        &:nth-child(3){
+            animation-delay: 0.25s;
+        }
+        &:nth-child(4){
+            animation-delay: 0.5s;
+        }
+        &:nth-child(5){
+            animation-delay: 0.75s;
+        }
         &:hover{
             box-shadow: 0 0.2em 0.2em 0 #cccccc;
             transition: 0.5s linear;
             .menu_div_text{
                 transition: 0.3s linear 0.1s;
-                min-width: 100px;
+                min-width: 120px;
             }
             .menu_div_price{
-                min-width: 11%;
-                margin-left: 0;
-                transition: 0.3s linear ;
+                min-width: 10%;
+                transition: 0.2s linear ;
             }
             i{
                 transform: rotate(360deg);
@@ -385,9 +397,10 @@ footer{
             }
         }
         &_text{
+            display: flex;
             flex-flow: column;
-            gap: 0.2em;
-            margin: 7px;
+            justify-content: space-between;
+            margin: 0.7em;
             margin-right: 0;
             white-space: nowrap;
             min-width: 80%;
@@ -399,18 +412,19 @@ footer{
             }
         }
         p{
-            font-size: 0.5em;
+            font-size: 0.8em;
             overflow: hidden;
-            text-overflow: ellipsis; 
+            text-overflow: ellipsis;
         }
         &_price{
-            font-size: 0.5em;
+            font-size: 0.8em;
             font-weight: bold;
             display: flex;
             align-items: flex-end;
             justify-content: center;
-            margin: 7px 5px;
-            min-width: 15%;
+            margin: 0.7em;
+            margin-left: 0;
+            min-width: 17%;
             transition: 0.3s linear 0.3s;
         }
         &_select{
@@ -422,12 +436,14 @@ footer{
             border-top-right-radius: 0.5em;
             border-bottom-right-radius: 0.5em;
             min-width: 3em;
-            font-size: 0.8em;
+            font-size: 1.2em;
             transition: 0.5s ease;
         }
     }
     .btn{
-        padding: 0.8em 2.2em;
+        margin-top: 0.9em;
+        font-size: 0.9em;
+        padding: 0.9em 3em;
     }
 }
 
