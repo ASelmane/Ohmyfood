@@ -381,6 +381,9 @@ footer{
         &:nth-child(5){
             animation-delay: 0.75s;
         }
+        &:nth-child(6){
+            animation-delay: 1s;
+        }
         &:hover{
             box-shadow: 0 0.2em 0.2em 0 #cccccc;
             transition: 0.5s linear;
@@ -463,19 +466,20 @@ footer{
     h2{
         font-size: 1.8em;
     }
+
     .btn{
         font-size: 0.9em;
     }
 
     body{
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
 
 }
 
 @media only screen and (min-width : 768px) {
     body{
-        font-size: 2.4em;
+        font-size: 2.3em;
     }
 }
 
@@ -540,10 +544,13 @@ footer{
 
     .menu{
         display: flex;
+        &_image{
+            width: 60%;
+        }
         &_info{
             margin: 0;
             width: 100%;
-            margin-left: -50%;
+            margin-left: -15%;
             border-top-right-radius: 0;
             border-bottom-left-radius: 2em;
             padding: 2.5em 1.3em;

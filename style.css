@@ -565,6 +565,11 @@ footer li i {
           animation-delay: 0.75s;
 }
 
+.menu_div:nth-child(6) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 .menu_div:hover {
   -webkit-box-shadow: 0 0.2em 0.2em 0 #cccccc;
           box-shadow: 0 0.2em 0.2em 0 #cccccc;
@@ -701,13 +706,13 @@ footer li i {
     font-size: 0.9em;
   }
   body {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
 }
 
 @media only screen and (min-width: 768px) {
   body {
-    font-size: 2.4em;
+    font-size: 2.3em;
   }
 }
 
@@ -789,10 +794,13 @@ footer li i {
     display: -ms-flexbox;
     display: flex;
   }
+  .menu_image {
+    width: 60%;
+  }
   .menu_info {
     margin: 0;
     width: 100%;
-    margin-left: -50%;
+    margin-left: -15%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 2em;
     padding: 2.5em 1.3em;
