@@ -1,8 +1,8 @@
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiaire: #99E2D0;
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiaire: #99e2d0;
 
-#preload{
+#preload {
     display: flex;
     position: fixed;
     align-items: center;
@@ -12,32 +12,32 @@ $tertiaire: #99E2D0;
     background: white;
     z-index: 10;
     animation: fade 0.5s 2s forwards;
-    #loader{
+    #loader {
         width: 100%;
         display: flex;
         justify-content: center;
-        div{
-            background: linear-gradient(160deg,$primary,$secondary);
+        div {
+            background: linear-gradient(160deg, $primary, $secondary);
             width: 2em;
             height: 2em;
             margin: 0.5em;
             border-radius: 100%;
             animation: ball 0.75s infinite linear;
-            &:nth-child(1){
+            &:nth-child(1) {
                 animation-delay: 0.25s;
             }
-            &:nth-child(2){
+            &:nth-child(2) {
                 animation-delay: 0.5s;
             }
-            &:nth-child(3){
+            &:nth-child(3) {
                 animation-delay: 0.75s;
             }
         }
     }
 }
 @keyframes fade {
-    to {    
-        opacity: 0; 
+    to {
+        opacity: 0;
         visibility: hidden;
     }
 }
@@ -53,48 +53,48 @@ $tertiaire: #99E2D0;
     }
 }
 
-body{
+body {
     margin: 0;
     font-family: Roboto, sans-serif;
-    font-stretch:condensed;
+    font-stretch: condensed;
 }
 
-h2{
+h2 {
     font-size: 1.5em;
     margin-bottom: 0.3em;
 }
 
-h3{
+h3 {
     font-size: 0.9em;
     margin: 0;
 }
 
-p{
+p {
     font-size: 0.9em;
-    font-weight:300;
+    font-weight: 300;
     margin: 0;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: center;
     position: relative;
     box-shadow: 0 -0.5em 0.5em 0.5em grey;
     z-index: 10;
-    i{
+    i {
         position: absolute;
         left: 1.2em;
         top: 1.2em;
         color: black;
         font-size: 1em;
     }
-    &_logo{
+    &_logo {
         width: 8em;
         padding: 1em 0 0.5em 0;
     }
 }
 
-.localisation{
+.localisation {
     display: flex;
     background-color: #eaeaea;
     padding: 1em 2em 1em 0;
@@ -103,52 +103,52 @@ p{
     font-size: 0.8em;
 }
 
-main{
+main {
     margin: 0;
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     padding: 1em;
 }
 
-.grey{
+.grey {
     background-color: #f6f6f6;
 }
 
-#explorer{
+#explorer {
     justify-content: center;
     text-align: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.btn{
+.btn {
     color: white;
     font-size: 0.7em;
     font-weight: 500;
     padding: 1em;
     margin: 2em auto 1em;
     border-radius: 2em;
-    background: linear-gradient(170deg,$secondary,$primary);
+    background: linear-gradient(170deg, $secondary, $primary);
     box-shadow: 0 0.3em 0.3em 0em #cccccc;
     transition: 0.3s ease;
-    &:hover{
+    &:hover {
         transition: 0.3s ease;
         opacity: 0.75;
         box-shadow: 0 0.3em 0.3em 0em #aaaaaa;
     }
 }
 
-.fonctionnement{
+.fonctionnement {
     display: flex;
     flex-direction: column;
     margin: 1em 0;
-    &_div{
+    &_div {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -159,7 +159,7 @@ a{
         margin-bottom: 0.7em;
         margin-left: 0.5em;
         transition: 0.3s ease;
-        .circle{
+        .circle {
             margin-left: -0.7em;
             width: 1.5em;
             height: 1.5em;
@@ -172,32 +172,32 @@ a{
             font-weight: bold;
             font-size: 0.8em;
         }
-        i{
+        i {
             width: 1em;
             color: gray;
             font-size: 1em;
         }
-        h3{
+        h3 {
             width: 75%;
         }
-        &:hover{
+        &:hover {
             box-shadow: 0 0.2em 0.2em 0 #cccccc;
             transition: 0.3s ease;
             background-color: #f5edff;
-            i{
+            i {
                 color: $primary;
             }
         }
     }
 }
 
-.restaurants{
+.restaurants {
     display: flex;
     flex-direction: column;
     gap: 1em;
     margin-top: 1em;
     margin-bottom: 2.5em;
-    &_card{
+    &_card {
         border-radius: 0.8em;
         display: flex;
         flex-direction: column;
@@ -206,7 +206,7 @@ a{
         background-color: white;
         box-shadow: 0 0.2em 0.4em 0 #dddddd;
         transition: 0.3s ease;
-        &_new{
+        &_new {
             position: absolute;
             background-color: $tertiaire;
             color: #149373;
@@ -218,32 +218,32 @@ a{
             right: 1em;
             border-radius: 0.1em;
         }
-        &_image{
+        &_image {
             border-top-left-radius: 0.8em;
             border-top-right-radius: 0.8em;
             width: 100%;
             height: 10em;
-            box-sizing: border-box; 
+            box-sizing: border-box;
             object-fit: cover;
             object-position: bottom;
-            &.center{
+            &.center {
                 object-position: 0 60%;
             }
         }
-        &_info{
+        &_info {
             display: flex;
             justify-content: space-between;
             padding: 0.8em;
             align-items: center;
-            &_text{
+            &_text {
                 color: black;
             }
-        }   
-        &:hover{
+        }
+        &:hover {
             box-shadow: 0 0.2em 0.2em 0 #cccccc;
             transition: 0.3s ease;
         }
-        svg{
+        svg {
             position: absolute;
             bottom: 1.5em;
             right: 1.5em;
@@ -251,107 +251,105 @@ a{
     }
 }
 
-.heart{
+.heart {
     margin: auto 0;
     cursor: pointer;
     height: 1.2em;
     width: 1.2em;
-    .full{
+    .full {
         opacity: 0;
     }
-    linearGradient{
-        .purple{
+    linearGradient {
+        .purple {
             stop-color: $primary;
         }
-        .pink{
+        .pink {
             stop-color: $secondary;
         }
     }
     &:hover {
-        .empty{
+        .empty {
             opacity: 0;
         }
-        .full{
-            fill: url('#grad');
+        .full {
+            fill: url("#grad");
             opacity: 1;
             transition: 0.8s ease;
         }
     }
-  }
+}
 
-
-footer{
-    background-color: rgb(50,50,50);
+footer {
+    background-color: rgb(50, 50, 50);
     color: white;
     padding: 1.3em 1em;
     height: 9em;
-    img{
-        filter:invert(100%);
+    img {
+        filter: invert(100%);
         width: 6em;
     }
-    ul{
+    ul {
         margin: 0.7em 0;
-        padding:0;
+        padding: 0;
     }
-    li{
+    li {
         list-style: none;
         font-size: 0.9em;
         line-height: 1.7em;
         color: white;
-        i{
+        i {
             width: 1.2em;
             margin-right: 0.2em;
         }
     }
 }
-.menu{
-    &_image{
-    width: 100%;
-    box-sizing: border-box;
-    object-fit: cover;
-    max-height: 12em;
+.menu {
+    &_image {
+        width: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
+        max-height: 12em;
     }
-
-    &_info{
-    padding: 1.8em 1em;
-    padding-bottom: 3em;
-    display: flex;
-    flex-direction: column;
-    margin-top: -2em;
-    background-color: #f6f6f6;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    position: relative;
+    &_info {
+        padding: 1.8em 1em;
+        padding-bottom: 3em;
+        display: flex;
+        flex-direction: column;
+        margin-top: -2em;
+        background-color: #f6f6f6;
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        position: relative;
     }
-    h1{
+    h1 {
         margin: 0;
-        font-family: "Shrikhand",sans-serif;
+        font-family: "Shrikhand", sans-serif;
         font-size: 1.5em;
         font-weight: normal;
     }
-    &_title{
+    &_title {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         padding-right: 0.5em;
         margin-bottom: 1.2em;
     }
-    &_part{
+    &_part {
         margin-bottom: 1em;
         animation: fadeIn 2s forwards;
-        h2{
+        h2 {
             font-size: 0.9em;
             font-weight: normal;
             margin: 0;
         }
-        hr{
+        hr {
             border: none;
             border-top: 0.2em solid $tertiaire;
             margin: 0.2em 0 0.5em 0;
             width: 2.3em;
         }
     }
-    &_div{
+    &_div {
         cursor: pointer;
         display: flex;
         border-radius: 0.8em;
@@ -363,35 +361,35 @@ footer{
         overflow: hidden;
         opacity: 0;
         animation: fadeIn 1s forwards;
-        &:nth-child(3){
+        &:nth-child(3) {
             animation-delay: 0.25s;
         }
-        &:nth-child(4){
+        &:nth-child(4) {
             animation-delay: 0.5s;
         }
-        &:nth-child(5){
+        &:nth-child(5) {
             animation-delay: 0.75s;
         }
-        &:nth-child(6){
+        &:nth-child(6) {
             animation-delay: 1s;
         }
-        &:hover{
+        &:hover {
             box-shadow: 0 0.2em 0.2em 0 #cccccc;
             transition: 0.5s linear;
-            .menu_div_text{
+            .menu_div_text {
                 transition: 0.3s linear 0.1s;
                 min-width: 120px;
             }
-            .menu_div_price{
+            .menu_div_price {
                 min-width: 10%;
-                transition: 0.2s linear ;
+                transition: 0.2s linear;
             }
-            i{
+            i {
                 transform: rotate(360deg);
                 transition: 0.4s linear;
             }
         }
-        &_text{
+        &_text {
             display: flex;
             flex-flow: column;
             justify-content: space-between;
@@ -401,17 +399,17 @@ footer{
             min-width: 80%;
             width: 100%;
             transition: 0.5s linear;
-            h3{
-                text-overflow: ellipsis; 
+            h3 {
+                text-overflow: ellipsis;
                 overflow: hidden;
             }
         }
-        p{
+        p {
             font-size: 0.8em;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        &_price{
+        &_price {
             font-size: 0.8em;
             font-weight: bold;
             display: flex;
@@ -422,7 +420,7 @@ footer{
             min-width: 17%;
             transition: 0.3s linear 0.3s;
         }
-        &_select{
+        &_select {
             background-color: $tertiaire;
             display: flex;
             align-items: center;
@@ -435,7 +433,7 @@ footer{
             transition: 0.5s ease;
         }
     }
-    .btn{
+    .btn {
         margin-top: 0.9em;
         font-size: 0.9em;
         padding: 0.9em 3em;
@@ -443,50 +441,49 @@ footer{
 }
 
 @keyframes fadeIn {
-    from{
+    from {
         opacity: 0;
         transform: translateY(0.5em);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@media only screen and (min-width : 480px) {
-    h2{
+@media only screen and (min-width: 480px) {
+    h2 {
         font-size: 1.8em;
     }
 
-    .btn{
+    .btn {
         font-size: 0.9em;
     }
 
-    body{
+    body {
         font-size: 1.4em;
     }
-
 }
 
-@media only screen and (min-width : 768px) {
-    body{
+@media only screen and (min-width: 768px) {
+    body {
         font-size: 2.3em;
     }
 }
 
-@media only screen and (min-width : 992px) {
-    body{
+@media only screen and (min-width: 992px) {
+    body {
         font-size: 1.4em;
     }
 
-    section{
+    section {
         padding: 1em 3em;
     }
 
-    .fonctionnement{
+    .fonctionnement {
         flex-flow: row;
         gap: 1em;
-        &_div{
+        &_div {
             margin-top: 1em;
             flex-flow: column;
             height: auto;
@@ -494,38 +491,38 @@ footer{
             text-align: center;
             gap: 0.6em;
             padding: 0 0.5em 1em;
-            .circle{
+            .circle {
                 margin: -0.7em 0 0;
                 font-size: 1.2em;
             }
-            i{
+            i {
                 font-size: 1.2em;
             }
-            h3{
+            h3 {
                 width: auto;
                 font-size: 1em;
             }
         }
     }
 
-    .restaurants{
+    .restaurants {
         flex-flow: wrap;
         max-width: 63em;
-        &_card{
+        &_card {
             flex: 1 1 12em;
-            &_image{
+            &_image {
                 height: 7em;
             }
-            &-invisible{
+            &-invisible {
                 flex: 1 1 12em;
             }
         }
     }
 
-    footer{
+    footer {
         padding-left: 3em;
         height: 7em;
-        ul{
+        ul {
             display: flex;
             flex-flow: column;
             flex-wrap: wrap;
@@ -533,13 +530,13 @@ footer{
         }
     }
 
-    .menu{
+    .menu {
         display: flex;
-        &_image{
+        &_image {
             width: 60%;
             max-height: none;
         }
-        &_info{
+        &_info {
             margin: 0;
             width: 100%;
             margin-left: -15%;
@@ -551,14 +548,14 @@ footer{
     }
 }
 
-@media only screen and (min-width : 1500px) {
-    body{
+@media only screen and (min-width: 1500px) {
+    body {
         font-size: 1.9em;
     }
 }
 
-@media only screen and (min-width : 1824px) {
-    body{
+@media only screen and (min-width: 1824px) {
+    body {
         font-size: 2.5em;
     }
 }
