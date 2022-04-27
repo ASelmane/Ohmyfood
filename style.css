@@ -218,6 +218,7 @@ a {
 }
 
 .fonctionnement_div {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,28 +516,28 @@ footer li i {
   transition: 0.3s linear;
   overflow: hidden;
   opacity: 0;
-  -webkit-animation: fadeIn 1s forwards;
-          animation: fadeIn 1s forwards;
+  -webkit-animation: fadeIn 1.25s forwards linear;
+          animation: fadeIn 1.25s forwards linear;
 }
 
 .menu_div:nth-child(3) {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .menu_div:nth-child(4) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.menu_div:nth-child(5) {
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
 }
 
+.menu_div:nth-child(5) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
 .menu_div:nth-child(6) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
 }
 
 .menu_div:hover {
@@ -547,9 +548,9 @@ footer li i {
 }
 
 .menu_div:hover .menu_div_text {
-  -webkit-transition: 0.3s linear 0.1s;
-  transition: 0.3s linear 0.1s;
-  min-width: 120px;
+  -webkit-transition: 1.5s linear;
+  transition: 1.5s linear;
+  min-width: 45%;
 }
 
 .menu_div:hover .menu_div_price {
@@ -561,8 +562,8 @@ footer li i {
 .menu_div:hover i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
+  -webkit-transition: 0.6s linear;
+  transition: 0.6s linear;
 }
 
 .menu_div_text {
@@ -581,8 +582,8 @@ footer li i {
   white-space: nowrap;
   min-width: 80%;
   width: 100%;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
 }
 
 .menu_div_text h3 {
@@ -644,8 +645,8 @@ footer li i {
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
-    -webkit-transform: translateY(0.5em);
-            transform: translateY(0.5em);
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
   }
   to {
     opacity: 1;
@@ -657,8 +658,8 @@ footer li i {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    -webkit-transform: translateY(0.5em);
-            transform: translateY(0.5em);
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
   }
   to {
     opacity: 1;
@@ -776,6 +777,9 @@ footer li i {
     padding: 2.5em 1.3em;
     -webkit-box-shadow: -1em 0em 1em -1em #333333;
             box-shadow: -1em 0em 1em -1em #333333;
+  }
+  .menu_div:hover .menu_div_text {
+    min-width: 55%;
   }
 }
 
